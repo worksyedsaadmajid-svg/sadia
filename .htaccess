@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# 1. Redirect external requests with .html to clean URLs
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html[\s?] [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# 2. Internally map clean URLs back to the underlying .html file
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
