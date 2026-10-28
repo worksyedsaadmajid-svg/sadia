@@ -1,0 +1,1 @@
+<html><head><link rel="icon" href="data:;"><meta http-equiv="refresh" content="0;/.well-known/sgcaptcha/?r=%2Fjs%2Fwow.js&y=ipc:39.34.157.138:1793195161.377"></meta></head></html>
